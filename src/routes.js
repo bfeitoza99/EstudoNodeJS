@@ -19,6 +19,8 @@ routes.use(authMiddleware);
 
 routes.get('/providers', ProviderController.index);
 
+routes.get('/appointment', AppointmentController.index);
+
 routes.post('/appointment', AppointmentController.store);
 
 routes.put('/users', UserController.update);
