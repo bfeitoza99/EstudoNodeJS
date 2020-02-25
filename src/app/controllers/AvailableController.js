@@ -12,7 +12,7 @@ class AvailableController {
       return res.status(400).json({ error: 'Invalid date' });
     }
     const searchDate = Number(date);
-    const appointment = await Appointment.findAll({
+    const appointment = await Appointment.findddAll({
       where: {
         provider_id: req.params.providersId,
         canceled_at: null,
